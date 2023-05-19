@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollock</title>
+  <link rel="stylesheet" href="../scss/index.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://redpervn.github.io/fa/css/all.min.css?fbclid=IwAR2VnCVu3fZyZybhEPHqAoRF9xJd2ZJZ43gCLfQokvfv6X5YJv1_V3HNSyw">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overflow">
+    <header class="header">
+      <div class="header__wrapper container-center">
+        <div class="header__wrapper--logo">
+          <img src="../../image/homeCoworking/Logo.svg">
+        </div>
+        <ul class="header__wrapper--navbar" id="navbar__menu">
+          <li onclick="location.href='../../home_coworking.html';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Home
+          </li>
+          <li onclick="location.href='#';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Services
+          </li>
+          <li onclick="location.href='#';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            About
+          </li>
+          <li onclick="location.href='./page_shop.html';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Pages
+          </li>
+          <li onclick="location.href='./page_blog.html';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Blog
+          </li>
+          <li onclick="location.href='#';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Contact
+          </li>
+        </ul>
+        <div class="header__wrapper--button">
+          <i class="fa-regular fa-magnifying-glass text-color__subtitle"></i>
+          <i class="fa-regular fa-bag-shopping text-color__subtitle"></i>
+          <i class="fa-regular fa-bars-sort text-color__subtitle button__mobile" id="btn__mobile"></i>
+          <button class="button__sign-up btn" id="button-sign-up__mobile">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="shared-banner pd-200">
+        <div class="shared-banner__wrap container-center">
+          <div class="shared-banner__title title-48">
+            Our Latest News
+          </div>
+          <div class="shared-banner__link subtitle-color mg-top-30">
+            <a href="../../home_coworking.html" class="shared-banner__link--homepage sub-title-15 title-color" href="../../home_coworking.html">HomePage</a>
+            /
+            <a href="./page_blog.html" class="shared-banner__link--page subtitle-color sub-title-15" href="./page_blog.html">Shop</a>
+          </div>
+        </div>
+      </section>
+      <section class="product container-center mg-top-100">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4">
+            <div class="product__sidebar">
+              <div class="row">
+                <div class="col-xs-6 col-lg-12">
+                  <div class="sidebar__category--header">
+                    <div class="p-header__title sub-title-18 fw-500 title-color">
+                      Category
+                    </div>
+                    <div class="p-header__icon">
+                      <i class="fa-regular fa-chevron-up subtitle-color"></i>
+                    </div>
+                  </div>
+                  <div class="sidebar__category--content">
+                    <div class="sc-content__item">
+                      <div class="sc-content__item--left">
+                        <input type="checkbox" class="sc-checkbox">
+                        <span class="sc-left__title sub-title-14 title-color">App</span>
+                      </div>
+                      <div class="sc-content__item--right">
+                        <i class="fa-regular fa-chevron-down subtitle-color"></i>
+                      </div>
+                    </div>
+                    <div class="sc-content__item">
+                      <div class="sc-content__item--left">
+                        <input type="checkbox" class="sc-checkbox">
+                        <span class="sc-left__title sub-title-14 title-color">Audio</span>
+                      </div>
+                      <div class="sc-content__item--right">
+                        <i class="fa-regular fa-chevron-down subtitle-color"></i>
+                      </div>
+                    </div>
+                    <div class="sc-content__item">
+                      <div class="sc-content__item--left">
+                        <input type="checkbox" class="sc-checkbox">
+                        <span class="sc-left__title sub-title-14 title-color">Electronics</span>
+                      </div>
+                      <div class="sc-content__item--right">
+                        <i class="fa-regular fa-chevron-up subtitle-color"></i>
+                      </div>
+                      <div class="sc-content__item--second-side-bar">
+                        <div class="sc-content__item">
+                          <div class="sc-content__item--left">
+                            <input type="checkbox" class="sc-checkbox">
+                            <span class="sc-left__title sub-title-14 subtitle-color">Accessories</span>
+                          </div>
+                        </div>
+                        <div class="sc-content__item">
+                          <div class="sc-content__item--left">
+                            <input type="checkbox" class="sc-checkbox">
+                            <span class="sc-left__title sub-title-14 subtitle-color">Camera</span>
+                          </div>
+                        </div>
+                        <div class="sc-content__item">
+                          <div class="sc-content__item--left">
+                            <input type="checkbox" class="sc-checkbox">
+                            <span class="sc-left__title sub-title-14 subtitle-color">Computer</span>
+                          </div>
+                        </div>
+                        <div class="sc-content__item">
+                          <div class="sc-content__item--left">
+                            <input type="checkbox" class="sc-checkbox">
+                            <span class="sc-left__title sub-title-14 subtitle-color">Headphones</span>
+                          </div>
+                        </div>
+                        <div class="sc-content__item">
+                          <div class="sc-content__item--left">
+                            <input type="checkbox" class="sc-checkbox">
+                            <span class="sc-left__title sub-title-14 subtitle-color">Smartphone</span>
+                          </div>
+                        </div>
+                        <div class="sc-content__item">
+                          <div class="sc-content__item--left">
+                            <input type="checkbox" class="sc-checkbox">
+                            <span class="sc-left__title sub-title-14 subtitle-color">TV</span>
+                          </div>
+                        </div>
+                        <div class="sc-content__item">
+                          <div class="sc-content__item--left">
+                            <input type="checkbox" class="sc-checkbox">
+                            <span class="sc-left__title sub-title-14 subtitle-color">Video</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-lg-12">
+                  <div class="sidebar__category--header">
+                    <div class="p-header__title sub-title-18 fw-500 title-color">
+                      Brand
+                    </div>
+                    <div class="p-header__icon">
+                      <i class="fa-regular fa-chevron-up subtitle-color"></i>
+                    </div>
+                  </div>
+                  <div class="sidebar__category--content">
+                    <div class="sc-content__item">
+                      <div class="sc-content__item--left">
+                        <input type="checkbox" class="sc-checkbox">
+                        <span class="sc-left__title sub-title-14 title-color">Apple</span>
+                      </div>
+                    </div>
+                    <div class="sc-content__item">
+                      <div class="sc-content__item--left">
+                        <input type="checkbox" class="sc-checkbox">
+                        <span class="sc-left__title sub-title-14 title-color">Bose</span>
+                      </div>
+                    </div>
+                    <div class="sc-content__item">
+                      <div class="sc-content__item--left">
+                        <input type="checkbox" class="sc-checkbox">
+                        <span class="sc-left__title sub-title-14 title-color">Dell</span>
+                      </div>
+                    </div>
+                    <div class="sc-content__item">
+                      <div class="sc-content__item--left">
+                        <input type="checkbox" class="sc-checkbox">
+                        <span class="sc-left__title sub-title-14 title-color">LG</span>
+                      </div>
+                    </div>
+                    <div class="sc-content__item">
+                      <div class="sc-content__item--left">
+                        <input type="checkbox" class="sc-checkbox">
+                        <span class="sc-left__title sub-title-14 title-color">Samsung</span>
+                      </div>
+                    </div>
+                    <div class="sc-content__item">
+                      <div class="sc-content__item--left">
+                        <input type="checkbox" class="sc-checkbox">
+                        <span class="sc-left__title sub-title-14 title-color">Sony</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-lg-12">
+                  <div class="sidebar__category--header">
+                    <div class="p-header__title sub-title-18 fw-500 title-color">
+                      Price
+                    </div>
+                    <div class="p-header__icon">
+                      <i class="fa-regular fa-chevron-up subtitle-color"></i>
+                    </div>
+                  </div>
+                  <div class="sidebar__category--content">
+                    <div class="slidecontainer">
+                      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <div class="sc-content__footer mg-top-20">
+                      <div class="sc-content__footer--price subtitle-color sub-title-14 fw-500">
+                        Price: $99 — $1999
+                      </div>
+                      <div class="sc-content__footer-filter sub-title-14 fw-500 blue-color">
+                        filter
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-8">
+            <div class="product__list">
+              <div class="product__list--header">
+                <div class="p-header__title sub-title-18 title-color fw-500">
+                  Devices
+                </div>
+                <div class="p-header__select blog-categories__select">
+                  <select>
+                    <option value="Select">Select</option>
+                    <option value="Select 1">Select 1</option>
+                    <option value="Select 2">Select 2</option>
+                    <option value="Select 3">Select 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="product__list--content">
+                <div class="row">
+                  <div class="col-xs-4">
+                    <a href="./page_shop_single_product.html" class="p-content__item">
+                      <img src="../../image/pageShop/shop1.svg" alt="image">
+                      <div class="p-header__item-text">
+                        <div class="p-text__title sub-title-18 title-color fw-500">
+                          S22 128GB
+                        </div>
+                        <div class="p-text__subtitle sub-title-16 subtitle-color">
+                          From $299
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="p-content__item">
+                      <img src="../../image/pageShop/shop2.svg" alt="image">
+                      <div class="p-header__item-text">
+                        <div class="p-text__title sub-title-18 title-color fw-500">
+                          Watch 4
+                        </div>
+                        <div class="p-text__subtitle sub-title-16 subtitle-color">
+                          From $399
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="p-content__item">
+                      <img src="../../image/pageShop/shop3.svg" alt="image">
+                      <div class="p-header__item-text">
+                        <div class="p-text__title sub-title-18 title-color fw-500">
+                          Z Fold 2
+                        </div>
+                        <div class="p-text__subtitle sub-title-16 subtitle-color">
+                          From $499
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="p-content__item">
+                      <img src="../../image/pageShop/shop4.svg" alt="image">
+                      <div class="p-header__item-text">
+                        <div class="p-text__title sub-title-18 title-color fw-500">
+                          Tab S7 FE
+                        </div>
+                        <div class="p-text__subtitle sub-title-16 subtitle-color">
+                          From $699
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="p-content__item">
+                      <img src="../../image/pageShop/shop5.svg" alt="image">
+                      <div class="p-header__item-text">
+                        <div class="p-text__title sub-title-18 title-color fw-500">
+                          The Freestyle
+                        </div>
+                        <div class="p-text__subtitle sub-title-16 subtitle-color">
+                          From $899
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="p-content__item">
+                      <img src="../../image/pageShop/shop6.svg" alt="image">
+                      <div class="p-header__item-text">
+                        <div class="p-text__title sub-title-18 title-color fw-500">
+                          Neo QLED 8K
+                        </div>
+                        <div class="p-text__subtitle sub-title-16 subtitle-color">
+                          From $2,999
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="p-content__item">
+                      <img src="../../image/pageShop/shop7.svg" alt="image">
+                      <div class="p-header__item-text">
+                        <div class="p-text__title sub-title-18 title-color fw-500">
+                          S22+ 256GB
+                        </div>
+                        <div class="p-text__subtitle sub-title-16 subtitle-color">
+                          From $799
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="p-content__item">
+                      <img src="../../image/pageShop/shop8.svg" alt="image">
+                      <div class="p-header__item-text">
+                        <div class="p-text__title sub-title-18 title-color fw-500">
+                          Buds Pro
+                        </div>
+                        <div class="p-text__subtitle sub-title-16 subtitle-color">
+                          From $149
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="p-content__item">
+                      <img src="../../image/pageShop/shop9.svg" alt="image">
+                      <div class="p-header__item-text">
+                        <div class="p-text__title sub-title-18 title-color fw-500">
+                          S22 Ultra
+                        </div>
+                        <div class="p-text__subtitle sub-title-16 subtitle-color">
+                          From $999
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__list--pagination blog-content__pagination bg__white mg-top-40">
+                  <i class="fa-regular fa-angle-left title-color"></i>
+                  <ul class="blog-content__pagination-list sub-title-14 title-color">
+                    <li class="blog-list__item">1</li>
+                    <li class="blog-list__item">2</li>
+                    <li class="blog-list__item">3</li>
+                    <li class="blog-list__item">4</li>
+                    <li class="blog-list__item">...</li>
+                  </ul>
+                  <i class="fa-regular fa-angle-right title-color"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog-footer">
+        <div class="blog-footer__wrap container-center">
+          <div class="blog-footer__wrap--header">
+            <div class="db-header__title title-48">
+              Get help, find answers, download drivers, manuals and much more
+            </div>
+            <div class="db-header__subtitle subtitle-color mg-top-30 sub-title-22">
+              Contact us online through chat and get support from an expert
+            </div>
+          </div>
+          <div class="blog-footer__wrap--content mg-top-80">
+            <button class="db__button btn ">
+              Chat Now
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__wrap container-center">
+        <div class="footer__wrap--content">
+          <div class="row">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+              <img src="../../image/homeCoworking/Logo-footer.svg" class="footer__logo" alt="logo">
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+              <div class="footer-item__title sub-title-22">
+                Company
+              </div>
+              <div class="footer-item__content mg-top-40">
+                <div class="footer-item__content--item sub-title-14">About</div>
+                <div class="footer-item__content--item sub-title-14">Work</div>
+                <div class="footer-item__content--item sub-title-14">Careers</div>
+                <div class="footer-item__content--item sub-title-14">Pricing</div>
+                <div class="footer-item__content--item sub-title-14">Blog</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+              <div class="footer-item__title sub-title-22">
+                Services
+              </div>
+              <div class="footer-item__content mg-top-40">
+                <div class="footer-item__content--item sub-title-14">Branding</div>
+                <div class="footer-item__content--item sub-title-14">Websites</div>
+                <div class="footer-item__content--item sub-title-14">Development</div>
+                <div class="footer-item__content--item sub-title-14">Strategy</div>
+                <div class="footer-item__content--item sub-title-14">Platforms</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+              <div class="footer-item__title sub-title-22">
+                Contact
+              </div>
+              <div class="footer-item__content mg-top-40">
+                <div class="footer-item__content--item sub-title-14">Help Desk</div>
+                <div class="footer-item__content--item sub-title-14">Docs</div>
+                <div class="footer-item__content--item sub-title-14">Open a Ticket</div>
+                <div class="footer-item__content--item sub-title-14">Chat</div>
+                <div class="footer-item__content--item sub-title-14">Forum</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="newsletter__title sub-title-22">Newsletter</div>
+              <div class="newsletter__subtitle sub-title-16">
+                Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+              </div>
+              <div class="newsletter__form">
+                <input class="newsletter__form--input" type="text" placeholder="Enter email">
+                <button class="btn newsletter__form--button">Submit</button>
+              </div>
+              <div class="newsletter__subtitle sub-title-14">
+                We hate spam as much as you do. We will never, ever send you such emails. 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__connect">
+          <div class="footer__connect--text sub-title-16">
+            © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+          </div>
+          <div class="footer__connect--icon">
+            <div class="footer-icon__item">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="footer-icon__item">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer-icon__item">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="../js/header.js"></script>
+</body>
+</html>

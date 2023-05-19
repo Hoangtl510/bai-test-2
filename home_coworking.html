@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollock</title>
+  <link rel="stylesheet" href="./src/scss/index.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://redpervn.github.io/fa/css/all.min.css?fbclid=IwAR2VnCVu3fZyZybhEPHqAoRF9xJd2ZJZ43gCLfQokvfv6X5YJv1_V3HNSyw">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <div class="overflow">
+    <header class="header">
+      <div class="header__wrapper container-center">
+        <div class="header__wrapper--logo">
+          <img src="./image/homeCoworking/Logo.svg">
+        </div>
+
+        <ul class="header__wrapper--navbar" id="navbar__menu">
+          <li onclick="location.href='./home_coworking.html';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Home
+          </li>
+          <li onclick="location.href='#';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Services
+          </li>
+          <li onclick="location.href='#';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            About
+          </li>
+          <li onclick="location.href='./src/page/page_shop.html';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Pages
+          </li>
+          <li onclick="location.href='./src/page/page_blog.html';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Blog
+          </li>
+          <li onclick="location.href='#';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Contact
+          </li>
+        </ul>
+        <div class="header__wrapper--button">
+          <i class="fa-regular fa-magnifying-glass text-color__subtitle"></i>
+          <i class="fa-regular fa-bag-shopping text-color__subtitle"></i>
+          <i class="fa-regular fa-bars-sort text-color__subtitle button__mobile" id="btn__mobile"></i>
+          <button class="button__sign-up btn" id="button-sign-up__mobile">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="home-banner bg__beige pd-200">
+        <div class="banner__content container-center">
+          <div class="banner__content--text">
+            <div class="text__title title-72 title-color">
+              Everything we do to make 
+              <span class="linear-gradient-color title-72">work better.</span>
+            </div>
+            <div class="text__subtitle subtitle-color  sub-title-18 mg-top-40">
+              Find the right space, services, and support, so your business and
+              its people can work their way, every day.
+            </div>
+          </div>
+          <div class="banner__content--button">
+            <button class="button__book-now btn">book now</button>
+            <button class="button__play blue-color bg__white btn ">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <div class="button__how-it-work title-color">how it work</div>
+          </div>
+          <div class="banner__content--image1 box__banner bg__yellow wrap-right">
+            <img src="./image/homeCoworking/image_banner-1.svg" alt="image">
+          </div>
+          <div class="banner__content--image2 box__banner bg__light-blue wrap-left">
+            <img src="./image/homeCoworking/image_banner-2.svg" alt="image">
+          </div>
+          <div class="banner__content--image3 box__banner bg__turquoise wrap-left">
+            <img src="./image/homeCoworking/image_banner-3.svg" alt="image">
+          </div>
+          <div class="banner__content--image4 box__banner bg__light-purple wrap-right">
+            <img src="./image/homeCoworking/image_banner-4.svg" alt="image">
+          </div>
+        </div>
+      </section> 
+      <section class="home-services mg-top-120 container-center">
+        <div class="services__header">
+          <div class="services__header--title title-48">
+            From a single desk to a whole building. The choice is yours.
+          </div>
+          <div class="services__header--subtitle subtitle-color mg-top-30 sub-title-18">
+            We provide office space that’s flexible to your needs and fully customisable.
+          </div>
+        </div>
+        <div class="services__content mg-top-80 row wrap-right">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="services__content-item ">
+              <div class="item__header purple-color-before">
+                <i class="fa-regular fa-building purple-color"></i>
+              </div>
+              <div class="item__content mg-top-40">
+                <div class="item__content--title sub-title-22">
+                  Private Office
+                </div>
+                <div class="item__content--subtitle subtitle-color mg-top-20 sub-title-16">
+                  Our coworking spaces are designed with collaboration in mind.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="services__content-item ">
+              <div class="item__header blue-color-before">
+                <i class="fa-regular fa-desktop blue-color"></i>
+              </div>
+              <div class="item__content mg-top-40">
+                <div class="item__content--title sub-title-22">
+                  Dedicated Desk
+                </div>
+                <div class="item__content--subtitle subtitle-color mg-top-20 sub-title-16">
+                  Our coworking spaces are designed with collaboration in mind.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="services__content-item">
+              <div class="item__header yellow-color-before">
+                <i class="fa-regular fa-table-picnic yellow-color"></i>
+              </div>
+              <div class="item__content mg-top-40">
+                <div class="item__content--title sub-title-22">
+                  Hot Desk
+                </div>
+                <div class="item__content--subtitle subtitle-color mg-top-20 sub-title-16">
+                  Our coworking spaces are designed with collaboration in mind.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services__button mg-top-50">
+          <button class="services__button--view-our-service btn">view our service</button>
+        </div>
+      </section>
+      <section class="home-partner mg-top-120 container-center">
+        <div class="partner__header title-36">
+          Working with the most trusted brands in the industry
+        </div>
+        <div class="partner__content mg-top-80 row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="partner__content--img mg-top-40">
+              <img src="./image/homeCoworking/google.svg" alt="image">
+            </div>
+          </div>
+          <div class=" col-xs-12 col-sm-6 col-md-3">
+            <div class="partner__content--img mg-top-40">
+              <img src="./image/homeCoworking/netflix.svg" alt="image">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="partner__content--img mg-top-40">
+              <img src="./image/homeCoworking/slack.svg" alt="image">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="partner__content--img mg-top-40">
+              <img src="./image/homeCoworking/intercom.svg" alt="image">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-office bg__beige container-center">
+        <div class="office__wrap row">
+          <div class="col-xs-12 col-sm-12 col-lg-4">
+            <div class="office__box--title title-36">
+              Lockable office space for teams of all sizes
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="office__box--office-item">
+              <div class="office-item__icon white-color purple-color-before">
+                <i class="fa-light fa-radio"></i>
+              </div>
+              <div class="office-item__content mg-top-40">
+                <div class="office-item__content--title sub-title-18">
+                  Office Membership
+                </div>
+                <div class="office-item__content--subtitle subtitle-color mg-top-20 sub-title-16">
+                  Book a day pass for a seat in our coworking spaces with access to amenities.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="office__box--office-item">
+              <div class="office-item__icon white-color blue-color-before">
+                <i class="fa-light fa-messages"></i>
+              </div>
+              <div class="office-item__content mg-top-40">
+                <div class="office-item__content--title title-color sub-title-18">
+                  Meeting Rooms
+                </div>
+                <div class="office-item__content--subtitle subtitle-color mg-top-20 sub-title-16">
+                  Book a day pass for a seat in our coworking spaces with access to amenities.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-featured mg-top-120 container-center">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-7">
+            <div class="featured__left ">
+              <div class="featured__left--img wrap-left">
+                <img src="./image/homeCoworking/featured.svg" alt="image">
+              </div>
+              <div class="featured__left--featured-text ">
+                <div class="featured-text__title sub-title-22 mg-top-40">
+                  <div class="featured-text__title--address title-color">
+                    229 West 36th Street. New York, USA.
+                  </div>
+                  <div class="featured-text__title--price sub-title-22 subtitle-color">From $49/mo</div>
+                </div>
+                <div class="featured-text__subtitle mg-top-40 sub-title-18 subtitle-color">
+                  We’re prioritising the health and safety of all members and employees in our spaces so you can continue working with peace of mind.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-5">
+            <div class="featured__right">
+              <div class="featured__right--title title-42">
+                Featured office space locations
+              </div>
+              <div class="featured__right--subtitle sub-title-18 subtitle-color">
+                Whether you’re an established enterprise or a scaling startup, find an office space that's right for you. 
+              </div>
+              <span class="featured__right--link purple-color">
+                View All Buildings 
+                <i class="fa-light fa-arrow-right-long"></i>
+              </span>
+              <div class="featured__right--button-slice">
+                <button class="featured-button-slice__left subtitle-color button-circle">
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="featured-button-slice__right subtitle-color button-circle">
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-space bg__beige  mg-top-120">
+        <div class="space__wrap container-center">
+          <div class="space__wrap--header">
+            <div class="space-header__title title-48">
+              <span class="space___title-color linear-gradient-color ">Office space</span>
+              your way. Work wherever business takes you
+            </div>
+            <div class="space-header__subtitle sub-title-18 subtitle-color">
+              From a single desk to a whole building. The choice is yours
+            </div>
+          </div>
+          <div class="space__wrap--content mg-top-80 wrap-right">
+            <div class="content-flexble wrap-right">
+              <div class="flexble__header-text sub-title-18 blue-color">
+                Office Space
+              </div>
+              <div class="flexble__title title-36">
+                Flexible workspace designed around your needs and comfort
+              </div>
+              <div class="flexble__subtitle sub-title-18 subtitle-color">
+                Whether you need a single desk or a whole building, we provide office space that’s flexible to your needs and fully customisable. Available for a day, or as long as you need. 
+              </div>
+              <div class="flexble__button sub-title-4">
+                learn more
+                <i class="fa-regular fa-arrow-right"></i>
+              </div>
+              <ul class="flexble__slice">
+                <li class="flexble__slice--item bg__gray"></li>
+                <li class="flexble__slice--item bg__gray"></li>
+                <li class="flexble__slice--item bg__gray"></li>
+              </ul>
+            </div>
+            <div class="content-big-image flexble__image">
+              <img src="./image/homeCoworking/space-big.svg" alt="image">
+            </div>
+            <div class="content-small-image flexble__image">
+              <img src="./image/homeCoworking/space-small.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-location mg-top-120">
+        <div class="location__header title-42">
+          With over <span class="location__header-color linear-gradient-color">3,000 locations</span> globally we have offices,  and meeting rooms in every major city
+        </div>
+        <div class="location__content container-center">
+          <div class="row">
+            <div class="col-xs-12 col-sm-7">
+              <div class="location__content--item">
+                <div class="location-item__img wrap-left">
+                  <img src="./image/homeCoworking/location1.svg" alt="image">
+                </div>
+                <div class="location-item__title sub-title-22 blue-color">
+                  New York
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="location__content--item">
+                <div class="location-item__img">
+                  <img src="./image/homeCoworking/location2.svg" alt="image">
+                </div>
+                <div class="location-item__title sub-title-22 blue-color">
+                  Miami
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="location__content--item">
+                <div class="location-item__img">
+                  <img src="./image/homeCoworking/location3.svg" alt="image">
+                </div>
+                <div class="location-item__title sub-title-22 blue-color">
+                  San Francisco
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <div class="location__content--item">
+                <div class="location-item__img">
+                  <img src="./image/homeCoworking/location4.svg" alt="image">
+                </div>
+                <div class="location-item__title blue-color sub-title-22 ">
+                  Los Angeles
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-setup bg__beige mg-top-120">
+        <div class="container-center">
+          <div class="setup__header">
+            <div class="setUp__header--title title-48">
+              Set up your office, pick a plan later
+            </div>
+            <div class="setup__header--subtitle sub-title-22 subtitle-color">
+              Try Shopify free for 14 days, no credit card required
+            </div>
+          </div>
+          <div class="setup__content">
+            <div class="setup__content--title subtitle-color sub-title-18">
+              Monthly
+            </div>
+            <label class="setup__content--switch switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            <div class="setup__content--title subtitle-color sub-title-18">
+              Yearly
+            </div>
+            <div class="setup__content--save white-color bg__green">
+              Save 20%
+            </div>
+          </div> 
+          <div class="setup__box">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="setup__box--item bg__white">
+                  <div class="setup-item__header">
+                    <div class="setup-item__header--title sub-title-18">
+                      Freelance
+                    </div>
+                    <div class="setup-item__header--price title-64">
+                      $19/mo
+                    </div>
+                    <div class="setup-item__header--subtitle subtitle-color sub-title-16">
+                      Best for new startups or businesses with occasional in-person sales
+                    </div>
+                  </div>
+                  <div class="setup-item__content mg-top-40">
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="condition__title sub-title-22">Fully-furnished and serviced</div>
+                    </div>
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="condition__title sub-title-22">Access  break-out areas</div>
+                    </div>
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="condition__title sub-title-22">Thousands of locations</div>
+                    </div>
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="condition__title sub-title-22">Global transport hubs</div>
+                    </div>
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="condition__title sub-title-22">24/7 Support Online</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="setup-item__footer bg__blue white-color">
+                  Start your free trial
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="setup__box--item wrap-right bg__white">
+                  <div class="setup-item__header">
+                    <div class="setup-item__header--title blue-color sub-title-18">
+                      Startup
+                    </div>
+                    <div class="setup-item__header--price title-64">
+                      $49/mo
+                    </div>
+                    <div class="setup-item__header--subtitle subtitle-color sub-title-16">
+                      Best for new startups or businesses with occasional in-person sales
+                    </div>
+                  </div>
+                  <div class="setup-item__content mg-top-40">
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check blue-color"></i>
+                      </div>
+                      <div class="condition__title title-color sub-title-22">Fully-furnished and serviced</div>
+                    </div>
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="condition__title sub-title-22">Access  break-out areas</div>
+                    </div>
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="condition__title sub-title-22">Thousands of locations</div>
+                    </div>
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="condition__title sub-title-22">Global transport hubs</div>
+                    </div>
+                    <div class="setup-item__content--condition">
+                      <div class="condition__icon">
+                        <i class="fa-regular fa-check"></i>
+                      </div>
+                      <div class="condition__title sub-title-22">24/7 Support Online</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="setup-item__footer bg__blue white-color">
+                  Start your free trial
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-workspace container-center">
+        <div class="workspace__header">
+          <div class="workspace__header--title title-48">
+            Find your perfect <span class="linear-gradient-color">workspace.</span>
+          </div>
+          <div class="workspace__header--subtitle sub-title-22 subtitle-color">
+            Whether you’re a team of one, a growing startup or a Fortune 500 company – we have flexible solutions for all the ways you work.
+          </div>
+        </div>
+        <div class="workspace__footer">
+          <button class="workspace__footer--button btn">Talk to an expert</button>
+        </div>
+      </section>
+      <section class="home-aboutUs bg__beige mg-top-120">
+        <div class="aboutUs__wrap container-center">
+          <div class="aboutUs__wrap--header">
+            <div class="aboutUs-header__title title-48">
+              What our clients are saying about us
+            </div>
+            <div class="aboutUs-header__subtitle subtitle-color sub-title-22">
+              Customer satisfaction is a primary goal for our company
+            </div>
+          </div>
+          <div class="aboutUs__wrap--content mg-top-80">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="aboutUs-content__item bg__white wrap-left">
+                  <div class="aboutUs-content__item--info">
+                    <img src="./image/homeCoworking/aboutUs-1.svg" alt="image">
+                    <div class="aboutUs-info__title">
+                      <div class="aboutUs-info__title-name title-color sub-title-22">Monica Smith</div>
+                      <div class="aboutUs-info__title-job sub-title-16 subtitle-color">Web Designer</div>
+                    </div>
+                    <div class="aboutUs-info__rate">
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                    </div>
+                  </div>
+                  <div class="aboutUs-content__item--content sub-title-18 subtitle-color">
+                    Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="aboutUs-content__item bg__white ">
+                  <div class="aboutUs-content__item--info">
+                    <img src="./image/homeCoworking/aboutUs-2.svg" alt="image">
+                    <div class="aboutUs-info__title">
+                      <div class="aboutUs-info__title-name sub-title-22">Vincent Smith</div>
+                      <div class="aboutUs-info__title-job sub-title-16 subtitle-color">Web Designer</div>
+                    </div>
+                    <div class="aboutUs-info__rate">
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                    </div>
+                  </div>
+                  <div class="aboutUs-content__item--content sub-title-18 subtitle-color">
+                    Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="aboutUs-content__item bg__white">
+                  <div class="aboutUs-content__item--info">
+                    <img src="./image/homeCoworking/aboutUs-3.svg" alt="image">
+                    <div class="aboutUs-info__title">
+                      <div class="aboutUs-info__title-name sub-title-22">Stella Smith</div>
+                      <div class="aboutUs-info__title-job sub-title-16 subtitle-color">Web Designer</div>
+                    </div>
+                    <div class="aboutUs-info__rate">
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                      <i class="fa-duotone fa-star yellow-color"></i>
+                    </div>
+                  </div>
+                  <div class="aboutUs-content__item--content sub-title-18 subtitle-color">
+                    Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__wrap container-center">
+        <div class="footer__wrap--content">
+          <div class="row">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+              <img src="./image/homeCoworking/Logo-footer.svg" class="footer__logo" alt="logo">
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+              <div class="footer-item__title sub-title-22">
+                Company
+              </div>
+              <div class="footer-item__content mg-top-40">
+                <div class="footer-item__content--item sub-title-14">About</div>
+                <div class="footer-item__content--item sub-title-14">Work</div>
+                <div class="footer-item__content--item sub-title-14">Careers</div>
+                <div class="footer-item__content--item sub-title-14">Pricing</div>
+                <div class="footer-item__content--item sub-title-14">Blog</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+              <div class="footer-item__title sub-title-22">
+                Services
+              </div>
+              <div class="footer-item__content mg-top-40">
+                <div class="footer-item__content--item sub-title-14">Branding</div>
+                <div class="footer-item__content--item sub-title-14">Websites</div>
+                <div class="footer-item__content--item sub-title-14">Development</div>
+                <div class="footer-item__content--item sub-title-14">Strategy</div>
+                <div class="footer-item__content--item sub-title-14">Platforms</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+              <div class="footer-item__title sub-title-22">
+                Contact
+              </div>
+              <div class="footer-item__content mg-top-40">
+                <div class="footer-item__content--item sub-title-14">Help Desk</div>
+                <div class="footer-item__content--item sub-title-14">Docs</div>
+                <div class="footer-item__content--item sub-title-14">Open a Ticket</div>
+                <div class="footer-item__content--item sub-title-14">Chat</div>
+                <div class="footer-item__content--item sub-title-14">Forum</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="newsletter__title sub-title-22">Newsletter</div>
+              <div class="newsletter__subtitle sub-title-16">
+                Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+              </div>
+              <div class="newsletter__form">
+                <input class="newsletter__form--input" type="text" placeholder="Enter email">
+                <button class="btn newsletter__form--button">Submit</button>
+              </div>
+              <div class="newsletter__subtitle sub-title-14">
+                We hate spam as much as you do. We will never, ever send you such emails. 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__connect">
+          <div class="footer__connect--text sub-title-16">
+            © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+          </div>
+          <div class="footer__connect--icon">
+            <div class="footer-icon__item">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="footer-icon__item">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer-icon__item">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="./src/js/header.js"></script>
+</body>
+</html>

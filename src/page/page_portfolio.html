@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollock</title>
+  <link rel="stylesheet" href="../scss/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://redpervn.github.io/fa/css/all.min.css?fbclid=IwAR2VnCVu3fZyZybhEPHqAoRF9xJd2ZJZ43gCLfQokvfv6X5YJv1_V3HNSyw">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="overflow">
+    <header class="header">
+      <div class="header__wrapper container-center">
+        <div class="header__wrapper--logo">
+          <img src="../../image/homeCoworking/Logo.svg">
+        </div>
+        <ul class="header__wrapper--navbar" id="navbar__menu">
+          <li onclick="location.href='../../home_coworking.html';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Home
+          </li>
+          <li onclick="location.href='#';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Services
+          </li>
+          <li onclick="location.href='#';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            About
+          </li>
+          <li onclick="location.href='./page_shop.html';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Pages
+          </li>
+          <li onclick="location.href='./page_blog.html';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Blog
+          </li>
+          <li onclick="location.href='#';" class="navbar__menu-item">
+            <div class="item-hover"></div>
+            Contact
+          </li>
+        </ul>
+        <div class="header__wrapper--button">
+          <i class="fa-regular fa-magnifying-glass text-color__subtitle"></i>
+          <i class="fa-regular fa-bag-shopping text-color__subtitle"></i>
+          <i class="fa-regular fa-bars-sort text-color__subtitle button__mobile" id="btn__mobile"></i>
+          <button class="button__sign-up btn" id="button-sign-up__mobile">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="shared-banner pd-200">
+        <div class="shared-banner__wrap container-center">
+          <div class="shared-banner__title title-48">
+            Our Latest News
+          </div>
+          <div class="shared-banner__link subtitle-color mg-top-30">
+            <a href="../../home_coworking.html" class="shared-banner__link--homepage sub-title-15 title-color" href="../../home_coworking.html">HomePage</a>
+            /
+            <a href="./page_blog.html" class="shared-banner__link--page subtitle-color sub-title-15" href="./page_blog.html">Project</a>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-inspired container-center mg-top-120">
+        <div class="portfolio-inspired__header title-64">
+          Get inspired by our finest work
+        </div>
+        <div class="portfolio-inspired__content mg-top-90">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <img src="../../image/pagePortfolio/portfolio1.svg" alt="image">
+              <img class="pi__bottom mg-top-30" src="../../image/pagePortfolio/portfolio2.svg" alt="image">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <img src="../../image/pagePortfolio/portfolio3.svg" alt="image">
+              <img class="pi__bottom mg-top-30" src="../../image/pagePortfolio/portfolio4.svg" alt="image">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 pi-item-last">
+              <img src="../../image/pagePortfolio/portfolio5.svg" alt="image">
+              <img class="pi__bottom mg-top-30" src="../../image/pagePortfolio/portfolio6.svg" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-inspired__footer mg-top-70">
+          <button class="pi-footer__button btn subtitle-color bg__gray">load more</button>
+        </div>
+      </section>
+      <section class="portfolio-feedback mg-top-120">
+        <div class="portfolio-feedback-wrap container-center">
+          <div class="portfolio-feedback__header">
+            <div class="portfolio-feedback__header--title title-48">
+              What our clients are saying about us
+            </div>
+            <div class="portfolio-feedback__header--subtitle subtitle-color sub-title-22 mg-top-30">
+              Customer satisfaction is a primary goal for our company
+            </div>
+          </div>
+          <div class="portfolio-feedback__content mg-top-40">
+            <div class="swiper pb-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="portfolio-feedback__content--item bg__white">
+                    <div class="pf__item--header">
+                      <img class="box-circle" src="../../image/homeCoworking/aboutUs-1.svg" alt="image">
+                      <div class="pf-header__text">
+                        <div class="pf-header__text--name sub-title-22 title-color">Monica Smith</div>
+                        <div class="pf-header__text--name subtitle-color sub-title-16 sub-title-18">Brand & Co</div>
+                        <div class="pf-header__text--amazing mg-top-20 sub-title-16 fw-500 title-color">Amazing!!</div>
+                      </div>
+                    </div>
+                    <div class="pf__item--content mg-top-30 subtitle-color sub-title-18">
+                      Overall experience is awesome!! I'm a visual thinker, and I couldn't function without a tool like this.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio-feedback__content--item bg__white">
+                    <div class="pf__item--header">
+                      <img class="box-circle" src="../../image/homeCoworking/aboutUs-2.svg" alt="image">
+                      <div class="pf-header__text">
+                        <div class="pf-header__text--name sub-title-22 title-color">Vincent Smith</div>
+                        <div class="pf-header__text--name subtitle-color sub-title-16 sub-title-18">Brand & Co</div>
+                        <div class="pf-header__text--amazing mg-top-20 sub-title-16 fw-500 title-color">Amazing!!</div>
+                      </div>
+                    </div>
+                    <div class="pf__item--content mg-top-30 subtitle-color sub-title-18 mg-top-30">
+                      Overall experience is awesome!! I'm a visual thinker, and I couldn't function without a tool like this.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio-feedback__content--item bg__white">
+                    <div class="pf__item--header">
+                      <img class="box-circle" src="../../image/homeCoworking/aboutUs-3.svg" alt="image">
+                      <div class="pf-header__text">
+                        <div class="pf-header__text--name sub-title-22 title-color">Stella Smith</div>
+                        <div class="pf-header__text--name subtitle-color sub-title-16 sub-title-18">Brand & Co</div>
+                        <div class="pf-header__text--amazing mg-top-20 sub-title-16 fw-500 title-color">Amazing!!</div>
+                      </div>
+                    </div>
+                    <div class="pf__item--content mg-top-30 subtitle-color sub-title-18">
+                      Overall experience is awesome!! I'm a visual thinker, and I couldn't function without a tool like this.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio-feedback__content--item bg__white">
+                    <div class="pf__item--header">
+                      <img class="box-circle" src="../../image/homeCoworking/aboutUs-4.svg" alt="image">
+                      <div class="pf-header__text">
+                        <div class="pf-header__text--name sub-title-22 title-color">Thomas Smith</div>
+                        <div class="pf-header__text--name subtitle-color sub-title-16 sub-title-18">Brand & Co</div>
+                        <div class="pf-header__text--amazing mg-top-20 sub-title-16 fw-500 title-color">Amazing!!</div>
+                      </div>
+                    </div>
+                    <div class="pf__item--content mg-top-30 subtitle-color sub-title-18">
+                      Overall experience is awesome!! I'm a visual thinker, and I couldn't function without a tool like this.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio-feedback__content--item bg__white">
+                    <div class="pf__item--header">
+                      <img class="box-circle" src="../../image/homeCoworking/aboutUs-1.svg" alt="image">
+                      <div class="pf-header__text">
+                        <div class="pf-header__text--name sub-title-22 title-color">Monica Smith</div>
+                        <div class="pf-header__text--name subtitle-color sub-title-16 sub-title-18">Brand & Co</div>
+                        <div class="pf-header__text--amazing mg-top-20 sub-title-16 fw-500 title-color">Amazing!!</div>
+                      </div>
+                    </div>
+                    <div class="pf__item--content mg-top-30 subtitle-color sub-title-18">
+                      Overall experience is awesome!! I'm a visual thinker, and I couldn't function without a tool like this.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio-feedback__content--item bg__white">
+                    <div class="pf__item--header">
+                      <img class="box-circle" src="../../image/homeCoworking/aboutUs-2.svg" alt="image">
+                      <div class="pf-header__text">
+                        <div class="pf-header__text--name sub-title-22 title-color">Vincent Smith</div>
+                        <div class="pf-header__text--name subtitle-color sub-title-16 sub-title-18">Brand & Co</div>
+                        <div class="pf-header__text--amazing mg-top-20 sub-title-16 fw-500 title-color">Amazing!!</div>
+                      </div>
+                    </div>
+                    <div class="pf__item--content mg-top-30 subtitle-color sub-title-18 mg-top-30">
+                      Overall experience is awesome!! I'm a visual thinker, and I couldn't function without a tool like this.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next">
+                <i class="fa-solid fa-caret-right"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="fa-solid fa-caret-left"></i>
+              </div>
+            </div>
+            <div class="portfolio-feedback__header--directional bg__black white-color box-circle">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-recent container-center mg-top-70">
+        <div class="portfolio-recent__header">
+          <div class="portfolio-recent__header--title title-48">
+            Recent projects
+          </div>
+        </div>
+        <div class="portfolio-recent__content mg-top-80">
+          <div class="swiper pr-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="portfolio-recent__content--item">
+                  <img src="../../image/pagePortfolio/recent1.svg" alt="">
+                  <div class="pr-item__text">
+                    <div class="pr__item--title sub-title-22 white-color">
+                      Collaboration App
+                    </div>
+                    <div class="pr__item--subtitle sub-title-18 white-color">
+                      UI Deisgn / Development
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-recent__content--item bg__light-blue">
+                  <img src="../../image/pagePortfolio/recent2.svg" alt="">
+                  <div class="pr-item__text">
+                    <div class="pr__item--title sub-title-22 white-color">
+                      Learning Mobile
+                    </div>
+                    <div class="pr__item--subtitle sub-title-18 white-color">
+                      UI Deisgn / Development
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-recent__content--item">
+                  <img src="../../image/pagePortfolio/recent3.svg" alt="">
+                  <div class="pr-item__text">
+                    <div class="pr__item--title sub-title-22 white-color">
+                      Abstract Waves
+                    </div>
+                    <div class="pr__item--subtitle sub-title-18 white-color">
+                      UI Deisgn / Development
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-recent__content--item">
+                  <img src="../../image/pagePortfolio/recent1.svg" alt="">
+                  <div class="pr-item__text">
+                    <div class="pr__item--title sub-title-22 white-color">
+                      Collaboration App
+                    </div>
+                    <div class="pr__item--subtitle sub-title-18 white-color">
+                      UI Deisgn / Development
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-recent__content--item bg__light-blue">
+                  <img src="../../image/pagePortfolio/recent2.svg" alt="">
+                  <div class="pr-item__text">
+                    <div class="pr__item--title sub-title-22 white-color">
+                      Learning Mobile
+                    </div>
+                    <div class="pr__item--subtitle sub-title-18 white-color">
+                      UI Deisgn / Development
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="portfolio-recent__content--item">
+                  <img src="../../image/pagePortfolio/recent3.svg" alt="">
+                  <div class="pr-item__text">
+                    <div class="pr__item--title sub-title-22 white-color">
+                      Abstract Waves
+                    </div>
+                    <div class="pr__item--subtitle sub-title-18 white-color">
+                      UI Deisgn / Development
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next pr__button btn bg__white">
+              <i class="fa-regular fa-arrow-right title-color"></i>
+            </div>
+            <div class="swiper-button-prev pr__button btn bg__white">
+              <i class="fa-regular fa-arrow-left title-color"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-update mg-top-240 container-center">
+        <div class="portfolio-update__header title-48">
+          We will keep you up to date and give you tips to help you optimise your company
+        </div>
+        <div class="portfolio-update__content mg-top-90">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-4 ">
+              <div class="portfolio-update__content--item pu-item__first">
+                <div class="pu-item__img">
+                  <img src="../../image/pagePortfolio/p-update1.svg" alt="image">
+                </div>
+                <div class="pu-item__content mg-top-20">
+                  <div class="pu-item__content--title sub-title-22 title-color">
+                    10 secrets to connect with your audience through your website and blog
+                  </div>
+                  <div class="pu-item__content--subtitle  mg-top-30 sub-title-18 subtitle-color">
+                    It is not the same to write a blog with simple information as to write by connecting with your target.
+                  </div>
+                  <div class="pu-item__content--time mg-top-30 subtitle-color">
+                    <div class="pu-time__date">
+                      <i class="fa-regular fa-calendar-days blue-color"></i>
+                      <div class="pu-time__date--title sub-title-14">May 7, 2022</div>
+                    </div>
+                    <div class="pu-time__date">
+                      <i class="fa-regular fa-clock blue-color"></i>
+                      <div class="pu-time__date--title sub-title-14">10 min read</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4 ">
+              <div class="portfolio-update__content--item">
+                <div class="pu-item__img">
+                  <img src="../../image/pagePortfolio/p-update2.svg" alt="image">
+                </div>
+                <div class="pu-item__content mg-top-20">
+                  <div class="pu-item__content--title sub-title-22 title-color">
+                    Which WordPress should you choose: WordPress.com vs WordPress.org?
+                  </div>
+                  <div class="pu-item__content--subtitle mg-top-30 sub-title-18 subtitle-color">
+                    Do you know what the difference is between WordPress.com and WordPress.org? Since they are not the same.
+                  </div>
+                  <div class="pu-item__content--time mg-top-30 subtitle-color">
+                    <div class="pu-time__date">
+                      <i class="fa-regular fa-calendar-days blue-color"></i>
+                      <div class="pu-time__date--title sub-title-14">May 7, 2022</div>
+                    </div>
+                    <div class="pu-time__date">
+                      <i class="fa-regular fa-clock blue-color"></i>
+                      <div class="pu-time__date--title sub-title-14">10 min read</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="portfolio-update__content--item item-3-row pu-item-3-first">
+                <div class="row">
+                  <div class="col-xs-9">
+                    <div class="pu-item__content--title sub-title-22 title-color">
+                      These web design trends will help inform and inspire what people build for the web
+                    </div>
+                    <div class="pu-item__content--time mg-top-30 subtitle-color">
+                      <div class="pu-time__date">
+                        <i class="fa-regular fa-calendar-days blue-color"></i>
+                        <div class="pu-time__date--title sub-title-14">May 7, 2022</div>
+                      </div>
+                      <div class="pu-time__date">
+                        <i class="fa-regular fa-clock blue-color"></i>
+                        <div class="pu-time__date--title sub-title-14">10 min read</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="pu-item__img pu-item-3-first">
+                      <img src="../../image/pagePortfolio/p-update3.svg" alt="image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-update__content--item item-3-row mg-top-30">
+                <div class="row">
+                  <div class="col-xs-9">
+                    <div class="pu-item__content--title sub-title-22 title-color">
+                      What are the differences between Google Analytics and Analytics 360
+                    </div>
+                    <div class="pu-item__content--time mg-top-30 subtitle-color">
+                      <div class="pu-time__date">
+                        <i class="fa-regular fa-calendar-days blue-color"></i>
+                        <div class="pu-time__date--title sub-title-14">May 7, 2022</div>
+                      </div>
+                      <div class="pu-time__date">
+                        <i class="fa-regular fa-clock blue-color"></i>
+                        <div class="pu-time__date--title sub-title-14">10 min read</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="pu-item__img">
+                      <img src="../../image/pagePortfolio/p-update4.svg" alt="image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-update__content--item item-3-row mg-top-30">
+                <div class="row">
+                  <div class="col-xs-9">
+                    <div class="pu-item__content--title sub-title-22 title-color">
+                      Niche Coworking: 4 shared workspaces for designers and developers
+                    </div>
+                    <div class="pu-item__content--time mg-top-30 subtitle-color">
+                      <div class="pu-time__date">
+                        <i class="fa-regular fa-calendar-days blue-color"></i>
+                        <div class="pu-time__date--title sub-title-14">May 7, 2022</div>
+                      </div>
+                      <div class="pu-time__date">
+                        <i class="fa-regular fa-clock blue-color"></i>
+                        <div class="pu-time__date--title sub-title-14">10 min read</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="pu-item__img">
+                      <img src="../../image/pagePortfolio/p-update5.svg" alt="image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__wrap container-center">
+        <div class="footer__wrap--content">
+          <div class="row">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+              <img src="../../image/homeCoworking/Logo-footer.svg" class="footer__logo" alt="logo">
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+              <div class="footer-item__title sub-title-22">
+                Company
+              </div>
+              <div class="footer-item__content mg-top-40">
+                <div class="footer-item__content--item sub-title-14">About</div>
+                <div class="footer-item__content--item sub-title-14">Work</div>
+                <div class="footer-item__content--item sub-title-14">Careers</div>
+                <div class="footer-item__content--item sub-title-14">Pricing</div>
+                <div class="footer-item__content--item sub-title-14">Blog</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+              <div class="footer-item__title sub-title-22">
+                Services
+              </div>
+              <div class="footer-item__content mg-top-40">
+                <div class="footer-item__content--item sub-title-14">Branding</div>
+                <div class="footer-item__content--item sub-title-14">Websites</div>
+                <div class="footer-item__content--item sub-title-14">Development</div>
+                <div class="footer-item__content--item sub-title-14">Strategy</div>
+                <div class="footer-item__content--item sub-title-14">Platforms</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+              <div class="footer-item__title sub-title-22">
+                Contact
+              </div>
+              <div class="footer-item__content mg-top-40">
+                <div class="footer-item__content--item sub-title-14">Help Desk</div>
+                <div class="footer-item__content--item sub-title-14">Docs</div>
+                <div class="footer-item__content--item sub-title-14">Open a Ticket</div>
+                <div class="footer-item__content--item sub-title-14">Chat</div>
+                <div class="footer-item__content--item sub-title-14">Forum</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <div class="newsletter__title sub-title-22">Newsletter</div>
+              <div class="newsletter__subtitle sub-title-16">
+                Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+              </div>
+              <div class="newsletter__form">
+                <input class="newsletter__form--input" type="text" placeholder="Enter email">
+                <button class="btn newsletter__form--button">Submit</button>
+              </div>
+              <div class="newsletter__subtitle sub-title-14">
+                We hate spam as much as you do. We will never, ever send you such emails. 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__connect">
+          <div class="footer__connect--text sub-title-16">
+            © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+          </div>
+          <div class="footer__connect--icon">
+            <div class="footer-icon__item">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="footer-icon__item">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer-icon__item">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/header.js"></script>
+  <script type="text/javascript" src="../js/swiper.js"></script>
+</body>
+</html> 
