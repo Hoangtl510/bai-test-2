@@ -2715,7 +2715,7 @@ footer {
 
 .shared-banner {
   position: relative;
-  background-image: url("../../../image/pageBlog/bg-banner.svg");
+  background-image: url("/image/pageBlog/bg-banner.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2979,7 +2979,7 @@ footer {
 }
 
 .sidebar-box__subscribe {
-  background-image: url("../../../image/pageBlog/BG-blog.svg");
+  background-image: url("/image/pageBlog/BG-blog.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 175px 50px;
@@ -3042,7 +3042,7 @@ footer {
 
 .blog-footer {
   padding: 108px 0;
-  background-image: url("../../../image/pageBlog/bg-banner.svg");
+  background-image: url("/image/pageBlog/bg-banner.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }

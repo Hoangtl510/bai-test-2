@@ -1,7 +1,7 @@
 // shared banner
 .shared-banner {
   position: relative;
-  background-image: url('../../../image/pageBlog/bg-banner.svg');
+  background-image: url('/image/pageBlog/bg-banner.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -212,7 +212,7 @@
 }
 
 .sidebar-box__subscribe {
-  background-image: url('../../../image/pageBlog/BG-blog.svg');
+  background-image: url('/image/pageBlog/BG-blog.svg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 175px 50px;
@@ -266,7 +266,7 @@
 
 .blog-footer {
   padding: 108px 0;
-  background-image: url('../../../image/pageBlog/bg-banner.svg');
+  background-image: url('/image/pageBlog/bg-banner.svg');
   background-size: cover;
   background-repeat: no-repeat;
   @media (max-width: 767px){ 
