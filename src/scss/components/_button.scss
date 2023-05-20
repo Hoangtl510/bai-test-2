@@ -1,12 +1,22 @@
 .btn {
   border: none;
   text-transform: uppercase;
-  color: var(--white-color);
-  background-color: var(--blue-color);
   border-radius: 5px;
   cursor: pointer;
   @media (max-width: 991px){ 
     text-transform:capitalize;
+  }
+}
+.btn-primary {
+  padding: 16.5px 37px;
+  @media (max-width: 991px){ 
+    padding: 11.5px 27px;
+  }
+}
+.btn-secondary {
+  padding: 21px 35px;
+  @media (max-width: 991px){ 
+    padding: 13px 18px;
   }
 }
 .button-circle {
@@ -14,4 +24,12 @@
   border: 1px solid #E7E5EA;
   border-radius: 50%;
   background-color: var(--white-color);
+}
+.button-play {
+  width: 52px;
+  height: 52px;
+}
+.button-slice {
+  width: 56px;
+  height: 56px;
 }

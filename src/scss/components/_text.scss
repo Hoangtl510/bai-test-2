@@ -157,7 +157,6 @@
 .sub-title-14 {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
 }
 .sub-title-15 {
   font-weight: 500;
@@ -188,5 +187,15 @@
   @media (max-width: 479px){ 
     font-size: 14px;
     line-height: 18px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+  @media (max-width: 767px){ 
+    text-transform: capitalize;
   }
 }

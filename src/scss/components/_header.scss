@@ -8,7 +8,7 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   background-color: var(--white-color);
 }
-.header__wrapper {
+.header__wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,8 +16,7 @@
     position: relative;
   }
 }
-
-.header__wrapper--navbar {
+.header-navbar {
   width: 40%;
   display: flex;
   justify-content: space-between;
@@ -39,12 +38,31 @@
     visibility: hidden;
   }
 }
+.header-button {
+  display: flex;
+  justify-content: space-between;
+  width: 18%;
+  min-width: 210px;
+  align-items: center;
+  @media (max-width: 1199px){ 
+    min-width: 225px;
+  }
+  @media (max-width: 991px){ 
+    min-width: 170px;
+  }
+  @media (max-width: 767px){ 
+    min-width: 125px;
+  }
+  @media (max-width: 575px){ 
+    min-width: 90px;
+  }
+}
 .menu-mobile {
   right: 15px;
   opacity: 1;
   visibility: visible;
 }
-.navbar__menu-item {
+.header-navbar__item {
   text-transform: uppercase;
   color: var(--subtitle-color);
   font-size: 15px;
@@ -52,6 +70,7 @@
   font-weight: 500;
   position: relative;
   margin: auto;
+  transition-duration: 0.3s;
   &:hover {
     color: var(--title-color);
     margin-bottom: 12px;
@@ -99,39 +118,13 @@
     display: none;
   }
 }
-
-
-.header__wrapper--button {
-  display: flex;
-  justify-content: space-between;
-  width: 18%;
-  min-width: 210px;
-  align-items: center;
-  @media (max-width: 1199px){ 
-    min-width: 180px;
-  }
-  @media (max-width: 991px){ 
-    min-width: 155px;
-  }
-  @media (max-width: 767px){ 
-    min-width: 95px;
-  }
-}
-.button__mobile {
+.header-button__mobile {
   display: none !important;
   @media (max-width: 767px){ 
     display: block !important;
   }
 }
-.button__sign-up {
-  font-size: 14px;
-  padding: 12px 39px;
-  @media (max-width: 1199px){ 
-    padding: 10px 20px;
-  }
-  @media (max-width: 991px){ 
-    padding: 7px 15px;
-  }
+.header-button__sign-up {
   @media (max-width: 767px){ 
     position: fixed;
     display: unset;
@@ -146,7 +139,7 @@
     padding: 10px 20px;
   }
 }
-.button-sign-up__mobile {
+.header-button-sign-up__mobile {
   right: 15px;
   opacity: 1;
   visibility: visible;
